@@ -11,7 +11,7 @@ public class Exercise22 {
         double sell = sellPrice * actions;
         double sellTaxPrice = sell * tax;
 
-        double profit = (sell - sellTaxPrice) - (buyPrice - buyTaxPrice);
+        double profit = (sell - sellTaxPrice) - (buyPrice + buyTaxPrice);
 
         System.out.printf("kwota zaplacona za akcej (bez prowizji): %.2f %n", buyPrice);
         System.out.printf("wartosc prowizji za kupno akcji: %.2f %n", buyTaxPrice);
